@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/calculadora.css">
+</head>
+<body>
+
+    <div class="box">
+        <div class="slider">
+            altura
+            <input type="range" min="30" max="200" value="183" class="altura">
+        </div>
+        <div class="value alturavalue">100</div>
+    </div>
+
+    <div class="box">
+        <div class="slider">
+            peso
+            <input type="range" min="30" max="200" value="80" class="peso">
+        </div>
+        <div class="value pesovalue">100</div>
+    </div>
+
+    <div class="box">
+        <div class="slider">
+            edad
+            <input type="range" min="1" max="110" value="20" class="edad">
+        </div>
+        <div class="value edadvalue">100</div>
+    </div>
+
+    <button class="button">enviar</button>
+
+
+    <div class="resultado">
+        tu IMC es de: <span id="resultado"></span>
+    </div>
+    <script src="calculadora.js"></script>
+</body>
+</html>

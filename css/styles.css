@@ -39,7 +39,8 @@ body header .navbar ul {
   gap: 10px;
 }
 body header .navbar ul li a {
-  color: #285430;
+  color: black;
+  font-weight: bold;
 }
 body header section {
   height: 100%;
@@ -75,8 +76,13 @@ body header section .container-header .header-content-dieta a {
   color: white;
   padding: 7px 20px;
   border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  text-align: center;
 }
-body header section .container-header .header-content-beneficios i, body header section .container-header .header-content-beneficios img {
+body header section .container-header .header-content-beneficios i, body header section .container-header .header-content-beneficios .icon {
   display: flex;
   color: black;
   justify-content: center;
@@ -85,6 +91,7 @@ body header section .container-header .header-content-beneficios i, body header 
   width: 40px;
   height: 40px;
   font-size: 25px;
+  background-color: #5F8D4E;
 }
 body header section .container-header .test {
   position: fixed;
@@ -94,7 +101,7 @@ body header section .container-header .test {
 body header section .container-header .test a {
   width: 100px;
   height: 100px;
-  background-color: #5F8D4E;
+  background-color: #FCD0A1;
   padding: 10px 40px;
   border-radius: 5px;
   color: black;
@@ -110,9 +117,9 @@ body main .guide {
   text-align: center;
 }
 body main .guide h2 {
-  margin-bottom: 50px;
   font-size: 40px;
   font-weight: bold;
+  margin-bottom: 50px;
 }
 body main .guide .container-guide {
   display: flex;
@@ -163,10 +170,10 @@ body main .beneficios {
   padding: 100px 0 100px 0;
   text-align: center;
 }
-body main .beneficios h2 {
-  margin-bottom: 50px;
+body main .beneficios > h2 {
   font-size: 40px;
   font-weight: bold;
+  margin-bottom: 50px;
 }
 body main .beneficios div {
   display: flex;
@@ -176,12 +183,14 @@ body main .beneficios div {
   flex-wrap: wrap;
   width: 100%;
   height: auto;
-  gap: 20px;
+  gap: 30px;
+  margin: 0 auto;
 }
 body main .beneficios div div {
   height: auto;
   min-height: 500px;
-  width: 30%;
+  width: 300px;
+  margin: 0;
   display: flex;
   flex-direction: column;
   justify-content: start;
@@ -199,6 +208,7 @@ body main .beneficios div div i, body main .beneficios div div img {
 body main .beneficios div div h2 {
   min-height: 90px;
   font-size: 30px;
+  margin-bottom: 0;
 }
 body main .beneficios div div h3 {
   font-size: 15px;
@@ -210,9 +220,9 @@ body main .servicios {
   background-color: white;
 }
 body main .servicios h2 {
-  margin-bottom: 50px;
   font-size: 40px;
   font-weight: bold;
+  margin-bottom: 50px;
   text-align: center;
 }
 body main .servicios .servicios-container {

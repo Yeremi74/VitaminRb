@@ -1,0 +1,18 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 20px;
+  background-color: #52a7e0;
+}
+body .box {
+  background-color: white;
+  padding: 20px 20px 20px 30px;
+  border-radius: 5px;
+}
+body .button {
+  padding: 30px;
+}/*# sourceMappingURL=calculadora.css.map */

@@ -1,5 +1,5 @@
 // // con esto vinculamos varios archivos de sass
-// @use 'anidaciones';
+
 // // variables
 // $green: green;
 // $blue: blue;
@@ -50,7 +50,7 @@ $bone: #E5D9B6;
                         border-radius: 10px;
 }
 @mixin tittle() {
-    margin-bottom:50px;
+    
     font-size: 40px;
     font-weight: bold;
 }
@@ -103,7 +103,8 @@ body{
                 li{
 
                     a{
-                        color: $green-dark;
+                        color: black;
+                        font-weight: bold;
                     }
                 }
             }
@@ -134,6 +135,7 @@ body{
                     text-align: center;
                     display: flex;
                     justify-content: center;
+                    
                     align-items: center;
                     flex-direction: column;
 
@@ -151,6 +153,11 @@ body{
                         color: white;
                         padding: 7px 20px;
                         border-radius: 20px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        gap: 10px;
+                        text-align: center;
                     }
                 }
 
@@ -159,7 +166,7 @@ body{
                 .header-content-beneficios{
                     // background-color: red;
 
-                    i,img{
+                    i,.icon{
                         display: flex;
                         color: black;
                         justify-content: center;
@@ -168,6 +175,7 @@ body{
                         width: 40px;
                         height: 40px;
                         font-size: 25px;
+                        background-color: #5F8D4E;
                     }
                 }
 
@@ -175,7 +183,7 @@ body{
                     a{
                         width: 100px;
                         height: 100px;
-                        background-color: $green-medium;
+                        background-color: #FCD0A1;
                         padding: 10px 40px;
                         border-radius: 5px;
                         color: black;
@@ -204,7 +212,8 @@ body{
             text-align: center;
             // background-color: $bone;
             h2{
-                @include tittle()
+                @include tittle();
+                margin-bottom:50px;
             }
 
             .container-guide{
@@ -260,8 +269,9 @@ body{
             text-align: center;
             // background-color: red;
 
-            h2{
-                @include tittle()
+            >h2{
+                @include tittle();
+                margin-bottom:50px;
             }
 
             div{
@@ -272,12 +282,15 @@ body{
                     flex-wrap: wrap;
                     width: 100%;
                     height: auto;
-                    gap: 20px;
+                    gap: 30px;
+                    margin: 0 auto;
+                    // background-color: blue;
                 div{
                     height: auto;
                     min-height: 500px;
-                    // background-color: blue;
-                    width: 30%;
+                    // background-color: red;
+                    width: 300px;
+                    margin: 0;
                     display: flex;
                     flex-direction: column;
                     justify-content: start;
@@ -299,6 +312,7 @@ body{
                         min-height: 90px;
                         font-size: 30px;
                         // font-weight: bold;
+                        margin-bottom: 0;
                     }
                     h3{
                         // background-color: blue;
@@ -318,6 +332,7 @@ body{
             
             h2{
                 @include tittle();
+                margin-bottom:50px;
                 text-align: center;
                 
             }
